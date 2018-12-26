@@ -30,7 +30,6 @@ public class BookController {
 
 
     @ApiOperation("获取所有图书")
-
     @GetMapping("/listBook")
     public Msg listBook(){
         List<Book> books = bookService.listBook();
