@@ -12,282 +12,320 @@
 		<script src="/shop/static/js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<header>
-			<div class="logo">
-				<img src="/shop/static/images/timg.jpg" />
-			</div>
-			<div class="personal">
-				<dl>
-					<dt>个人中心</dt>
-					<dd>
-						<s>
-							<img src="/shop/static/images/ld.png" height="16" width="14" alt="">
-						</s>
-						<span>
+	<header>
+		<div class="logo">
+			<img src="/shop/static/images/timg.jpg" />
+		</div>
+		<div class="personal">
+			<dl>
+				<dt>个人中心</dt>
+				<dd>
+					<s>
+						<img src="/shop/static/images/ld.png" height="16" width="14" alt="">
+					</s>
+					<span>
 							<img src="/shop/static/images/pic.png" height="33" width="33"> 刘小书 lUCy
 						</span>
-					</dd>
-				</dl>
-			</div>
-		</header>
+				</dd>
+			</dl>
+		</div>
+	</header>
 
-		<div class="banner">
-			<div class="w inner">
-				<div class="Img">
-					<img src="/shop/static/images/background.jpg">
-				</div>
-				<div class="circle">
-					<i class="current"></i>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
-				</div>
+	<div class="banner">
+		<div class="w inner">
+			<div class="Img">
+				<img src="/shop/static/images/background.jpg">
+			</div>
+			<div class="circle">
+				<i class="current"></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
 			</div>
 		</div>
-		<div class="tab-contain">
-			<!-- tab栏 -->
-			<ul id="tabs">
-				<li class="current"><a href="#" title="tab1">书单</a></li>
-				<li><a href="#" title="tab2">订单管理</a></li>
-				<li><a href="#" title="tab3">顾客管理</a></li>
-				<li><a href="#" title="tab4">书店信息</a></li>
-			</ul>
-			<!-- 对应显示内容 -->
-			<div id="content">
-				<div id="tab1" class="item show">
-					<h2 align="center" style="font-family: '楷体';">梦唐书店书单表</h2>
-					<div class="search">
-						<input type="text" id="searchText" placeholder="请输入图书关键字" />
-						<button id="searchBook"></button>
-					</div>
-					<hr />
-					<div class="table">
-						<table class="table table-bordered table-hover">
-							<thead>
-								<th>书名</th>
-								<th>书编号</th>
-								<th>定价</th>
-								<th>出版日期</th>
-								<th>操作</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+	</div>
+	<div class="tab-contain">
+		<!-- tab栏 -->
+		<ul id="tabs">
+			<li class="current"><a href="#" title="tab1">书单</a></li>
+			<li><a href="#" title="tab2">订单管理</a></li>
+			<li><a href="#" title="tab3">顾客管理</a></li>
+			<li><a href="#" title="tab4">书店信息</a></li>
+		</ul>
+		<!-- 对应显示内容 -->
+		<div id="content">
+			<div id="tab1" class="item show">
+				<h2 align="center" style="font-family: '楷体';">梦唐书店书单表</h2>
+				<div class="search">
+					<input type="text" id="searchText" placeholder="请输入图书关键字" />
+					<button id="searchBook"></button>
 				</div>
-				<div id="tab2" class="item">
-					<h2 align="center" style="font-family: '楷体';">梦唐书店订单管理</h2>
-					<button id="addOrder" class="btn btn-info" data-toggle="modal" data-target="#myModal">增加</button>
-					<hr />
-					<div class="table">
-						<table class="table table-bordered table-hover">
-							<thead>
-								<th>订单号</th>
-								<th>顾客</th>
-								<th>书名</th>
-								<th>购买数量</th>
-								<th>操作</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>大大</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-										<button class="btn btn-info">移除</button></td>
-								</tr>
-								<tr>
-									<td>《蒙娜丽莎的微笑》</td>
-									<td>001</td>
-									<td>39.0</td>
-									<td>2018-2-8</td>
-									<td>
-									<button class="btn btn-info">移除</button></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+				<hr />
+				<div class="table" >
+					<table class="table table-bordered table-hover" id="first">
+						<thead>
+						<th>书名</th>
+						<th>书编号</th>
+						<th>定价</th>
+						<th>出版日期</th>
+						<th>操作</th>
+						</thead>
+						<tbody>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
-				<div id="tab3" class="item">
-					<h2 align="center" style="font-family: '楷体';">顾客清单</h2>
-					<button id="addCustomer" class="btn btn-info" data-toggle="modal" data-target="#myModal">增加</button>
-					<hr />
-					<div class="table">
-						<table class="table table-bordered table-hover">
-							<thead>
-								<th>编号</th>
-								<th>姓名</th>
-								<th>性别</th>
-								<th>年龄</th>
-								<th>操作</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td>01</td>
-									<td>杨孟阳</td>
-									<td>男</td>
-									<td>18</td>
-									<td>
-										<button class="btn btn-primary" data-toggle="modal" data-target="#alterModal">修改</button>
-										<button class="btn btn-danger">踢出</button></td>
+			</div>
+			<div id="tab2" class="item">
+				<h2 align="center" style="font-family: '楷体';">梦唐书店订单管理</h2>
+				<button id="addOrder" class="btn btn-info" data-toggle="modal" data-target="#addOrderModal">增加</button>
+				<hr />
+				<div class="table">
+					<table class="table table-bordered table-hover" id="two">
+						<thead>
+						<th>订单号</th>
+						<th>顾客</th>
+						<th>书名</th>
+						<th>购买数量</th>
+						<th>操作</th>
+						</thead>
+						<tbody>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>大大</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						<tr>
+							<td>《蒙娜丽莎的微笑》</td>
+							<td>001</td>
+							<td>39.0</td>
+							<td>2018-2-8</td>
+							<td>
+								<button class="btn btn-info">移除</button></td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="tab3" class="item">
+				<h2 align="center" style="font-family: '楷体';">顾客清单</h2>
+				<button id="addCustomer" class="btn btn-info" data-toggle="modal" data-target="#myModal">增加</button>
+				<hr />
+				<div class="table three">
+					<table class="table table-bordered table-hover" id="three">
+						<thead>
+						<th>编号</th>
+						<th>姓名</th>
+						<th>性别</th>
+						<th>年龄</th>
+						<th>操作</th>
+						</thead>
+						<tbody>
+						<tr>
+							<td>01</td>
+							<td>杨孟阳</td>
+							<td>男</td>
+							<td>18</td>
+							<td>
+								<button class="btn btn-primary alter" value="3">修改</button>
+								<button class="btn btn-danger">踢出</button></td>
 
-								</tr>
-								<tr>
-									<td>02</td>
-									<td>唐正</td>
-									<td>男</td>
-									<td>100</td>
-									<td>
-										<button class="btn btn-primary" data-toggle="modal" data-target="#alterModal">修改</button>
-										<button class="btn btn-danger">踢出</button></td>
-								</tr>
-								<tr>
-									<td>03</td>
-									<td>刘俊超</td>
-									<td>男</td>
-									<td>17</td>
-									<td>
-										<button class="btn btn-info" data-toggle="modal" data-target="#alterModal">修改</button>
-										<button class="btn btn-danger">踢出</button></td>
-								</tr>
-								<tr>
-									<td>04</td>
-									<td>萌萌</td>
-									<td>女</td>
-									<td>3</td>
-									<td>
-										<button class="btn btn-info" data-toggle="modal" data-target="#alterModal" value="">修改</button>
-										<button class="btn btn-danger">踢出</button></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>唐正</td>
+							<td>男</td>
+							<td>100</td>
+							<td>
+								<button class="btn btn-primary alter" value="5">修改</button>
+								<button class="btn btn-danger">踢出</button></td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>刘俊超</td>
+							<td>男</td>
+							<td>17</td>
+							<td>
+								<button class="btn btn-info alter" value="8">修改</button>
+								<button class="btn btn-danger">踢出</button></td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>萌萌</td>
+							<td>女</td>
+							<td>3</td>
+							<td>
+								<button class="btn btn-info" data-toggle="modal" data-target="#alterModal" value="">修改</button>
+								<button class="btn btn-danger">踢出</button></td>
+						</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		</div>
-		</div>
-		<hr />
-		
-		
-		<!-- 模态框区域 -->
-		<!--增加顾客时使用的模态框 -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLable">注册顾客</h4>
-					</div>
-					<div class="modal-body customer">
-						<form class="form">
-							<div class="input-group">
-								<span class="input-group-addon">姓名</span>
-								<input type="text" name="name" class="form-control" placeholder="请输入姓名">
-							</div>
-							<div class="input-group">
-								<span class="input-group-addon">性别</span>
-								<input type="text" name="sex" class="form-control" placeholder="男 or 女">
-							</div>
-							<div class="input-group">
-								<span class="input-group-addon">年龄</span>
-								<input type="text" name="age" class="form-control" placeholder="请输入年龄">
-							</div>
-						</form>
-						
-					
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-						<button type="button" class="btn btn-primary" id="addClick">提交</button>
-					</div>
+	</div>
+	</div>
+	<hr />
+
+
+	<!-- 模态框区域 -->
+	<!--增加顾客时使用的模态框 -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLable">注册顾客</h4>
+				</div>
+				<div class="modal-body customer">
+					<form class="form">
+						<div class="input-group">
+							<span class="input-group-addon">姓名</span>
+							<input type="text" name="name" class="form-control" placeholder="请输入姓名">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">性别</span>
+							<input type="text" name="sex" class="form-control" placeholder="男 or 女">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">年龄</span>
+							<input type="text" name="age" class="form-control" placeholder="请输入年龄">
+						</div>
+					</form>
+
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="addClick">提交</button>
 				</div>
 			</div>
 		</div>
-		
-		<!--修改顾客时使用的模态框-->
-		<div class="modal fade" id="alterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLable1">修改顾客信息</h4>
-					</div>
-					<div class="modal-body alter">
-						<form class="form">
-							<div class="input-group">
-								<span class="input-group-addon">姓名</span>
-								<input type="text" name="name" class="form-control" placeholder="请输入姓名">
-							</div>
-							<div class="input-group">
-								<span class="input-group-addon">性别</span>
-								<input type="text" name="sex" class="form-control" placeholder="男 or 女">
-							</div>
-							<div class="input-group">
-								<span class="input-group-addon">年龄</span>
-								<input type="text" name="age" class="form-control" placeholder="请输入年龄">
-							</div>
-						</form>
-						
-					
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-						<button type="button" class="btn btn-primary" id="alterClick">提交</button>
-					</div>
+	</div>
+
+	<!--修改顾客时使用的模态框-->
+	<div class="modal fade" id="alterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLable">修改顾客信息</h4>
+				</div>
+				<div class="modal-body alterDetail">
+					<form class="form">
+						<div class="input-group">
+							<span class="input-group-addon">姓名</span>
+							<input type="text" name="name" class="form-control" placeholder="请输入姓名">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">性别</span>
+							<input type="text" name="sex" class="form-control" placeholder="男 or 女">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">年龄</span>
+							<input type="text" name="age" class="form-control" placeholder="请输入年龄">
+						</div>
+					</form>
+
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="alterClick">提交</button>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<!--增加订单时使用的模态框-->
+	<div class="modal fade" id="addOrderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLable">增加订单信息</h4>
+				</div>
+				<div class="modal-body addOrder">
+					<form class="form">
+						<div class="input-group">
+							<span class="input-group-addon">订单号</span>
+							<input type="text" name="order" class="form-control" placeholder="请输入订单号">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">顾客</span>
+							<input type="text" name="name" class="form-control" placeholder="请输入顾客名">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">书名</span>
+							<input type="text" name="bookName" class="form-control" placeholder="请输入书名">
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon">购买数量</span>
+							<input type="text" name="number" class="form-control" placeholder="请输入购买数量">
+						</div>
+					</form>
+
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="addOrderClick">提交</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	</body>
 </html>
