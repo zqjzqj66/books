@@ -1,4 +1,4 @@
-package com.imooc.books.controoler;
+package com.imooc.books.controoler.page;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +15,10 @@ import org.springframework.web.servlet.View;
  * @date 2018/12/26 12:38
  */
 @Controller
-@RequestMapping(value = "page")
 public class PageController {
 
     @GetMapping("/ha")
-    public ModelAndView index(){
-        return new ModelAndView("ha");
+    public String index(){
+        return "/page/ha";
     }
 }
